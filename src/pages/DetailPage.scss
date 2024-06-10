@@ -1,0 +1,19 @@
+.detail {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark);
+  position: relative;
+  .close {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bright);
+  }
+}

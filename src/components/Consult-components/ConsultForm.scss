@@ -1,0 +1,91 @@
+.bg-form {
+  width: 100vw;
+  height: 90vh;
+  //   background-color: var(--second);
+  // padding: 150px 0;
+  // background-image: url("../../assets/form-mockup.png");
+  background-image: url("../../assets/notemockup.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-content: center;
+  position: relative;
+
+  .blur {
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    align-content: center;
+  }
+  .require {
+    background-color: rgb(255, 85, 85);
+  }
+  .none {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  label {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: var(--dark);
+  }
+  .input-head {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+  }
+  input {
+    height: auto;
+    padding: 10px 0 5px 10px;
+    background-color: inherit;
+    font-size: 18px;
+    color: var(--dark);
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid var(--dark);
+    width: 300px;
+  }
+  input::placeholder {
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .text-feild {
+    align-items: start;
+  }
+  textarea {
+    font-family: "Noto Sans KR", sans-serif;
+    width: 300px;
+    min-height: 50px;
+    resize: vertical;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--dark);
+    outline: none;
+    background-color: var(--bright);
+    font-weight: 500;
+    color: var(--dark);
+  }
+
+  @media screen and (max-width: 500px) {
+    label {
+      flex-direction: column;
+      gap: 0;
+    }
+    .text-feild {
+      align-items: center;
+      .input-head {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

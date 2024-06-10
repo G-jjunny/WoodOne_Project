@@ -1,0 +1,47 @@
+import React from "react";
+import styled from "styled-components";
+import Button from "../Button";
+import { Link } from "react-router-dom";
+
+const CollectionItems = styled.div`
+  width: 100%;
+  height: 300px;
+  display: flex;
+  gap: 20px;
+  .box {
+    width: 400px;
+    height: 300px;
+    background-color: var(--main);
+  }
+  .line {
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    h2 {
+      font-family: "Archivo", sans-serif;
+    }
+  }
+  .pri {
+    color: var(--dark-green);
+  }
+`;
+
+const LineList = ({ type }) => {
+  return (
+    <CollectionItems>
+      <div className="box"></div>
+      <div className="line">
+        <h4 className="pri">collection</h4>
+        <h2 className="en semibold">{type}</h2>
+        <h4 className="pri">Line (150)</h4>
+        <Link to={`/collection/${type}`}>
+          <Button text="더보기" type="primary" />
+        </Link>
+      </div>
+    </CollectionItems>
+  );
+};
+
+export default LineList;

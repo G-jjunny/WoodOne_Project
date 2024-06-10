@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes, useLocation } from "react-router-dom";
+import "./App.scss";
+import GallaryPage from "./pages/GallaryPage";
+import PageMain from "./pages/PageMain";
+import ConsultPage from "./pages/ConsultPage";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import DetailPage from "./pages/DetailPage";
+import { useEffect } from "react";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ScrollToTop />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<PageMain />}></Route>
+        <Route path="/collection" element={<GallaryPage />}></Route>
+        <Route path="/collection/:id" element={<DetailPage />}></Route>
+        <Route path="/consult" element={<ConsultPage />}></Route>
+      </Routes>
+      <Footer />
     </div>
   );
 }
