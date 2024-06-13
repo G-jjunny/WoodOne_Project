@@ -16,7 +16,7 @@ const GallaryCollection = () => {
       </div>
       <div className="collection-items">
         {collectionData.map((item) => (
-          <LineList key={item.id} type={item.line} />
+          <LineList key={item.id} type={item.line} item={item} />
         ))}
         <ToIdealLegno />
       </div>

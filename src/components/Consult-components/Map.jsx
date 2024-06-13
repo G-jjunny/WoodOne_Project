@@ -19,7 +19,7 @@ const Map = () => {
     <div className="container map">
       <div className="head">
         <h1 className="headline">Contact</h1>
-        <h4>address : 서울시 논현동</h4>
+        <h4>address : 강남구 논현로128길 22-4</h4>
       </div>
       <div id="map"></div>
     </div>

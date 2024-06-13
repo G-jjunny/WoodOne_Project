@@ -28,15 +28,17 @@ const CollectionItems = styled.div`
   }
 `;
 
-const LineList = ({ type }) => {
+const LineList = ({ item }) => {
+  const { line, size } = item;
+  console.log(line);
   return (
     <CollectionItems>
       <div className="box"></div>
       <div className="line">
         <h4 className="pri">collection</h4>
-        <h2 className="en semibold">{type}</h2>
-        <h4 className="pri">Line (150)</h4>
-        <Link to={`/collection/${type}`}>
+        <h2 className="en semibold">{line}</h2>
+        <h4 className="pri">Line ({size.map((i) => " " + i + " ")})</h4>
+        <Link to={`/collection/${line}`}>
           <Button text="더보기" type="primary" />
         </Link>
       </div>

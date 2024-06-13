@@ -9,9 +9,10 @@ const Footer = () => {
           <h4>CEO : 정병훈</h4> <div className="slash"></div>
           <h4>Business License : $$$$$$$$$$$$$</h4>
         </div>
-        <h4>Adress : $$$ $$$$ $$$$$ $$$ $</h4>
-        <h4>Tel : $$$-$$$$-$$$$</h4>
-        <h4>E-mail : $$$$$$$$@woodone.com</h4>
+        <h4>Adress : 강남구 논현로128길 22-4</h4>
+        <h4>Tel : 02-547-8164</h4>
+        <h4>Fax : 02-547-8164</h4>
+        <h4>E-mail : woodone@naver.com</h4>
         <span className="copy">© 2024. 우드원 All rights reserved.</span>
       </div>
     </div>
