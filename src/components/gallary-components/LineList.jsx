@@ -31,6 +31,9 @@ const CollectionItems = styled.div`
     .box {
       height: 200px;
     }
+    .pri {
+      font-size: 10px;
+    }
   }
 `;
 
@@ -43,7 +46,10 @@ const LineList = ({ item }) => {
       <div className="line">
         <h4 className="pri">collection</h4>
         <h2 className="en semibold">{line}</h2>
-        <h4 className="pri">Line ({size.map((i) => " " + i + " ")})</h4>
+        <h4 className="pri">
+          Line
+          <br />( {size.map((i) => i + " ")})
+        </h4>
         <Link to={`/collection/${line}`}>
           <Button text="더보기" type="primary" />
         </Link>
