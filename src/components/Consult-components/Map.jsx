@@ -15,6 +15,7 @@ const Map = () => {
     const marker = new kakao.maps.Marker({
       position: mapOption.center,
     });
+
     marker.setMap(map);
 
     map.setZoomable(false);
@@ -24,7 +25,7 @@ const Map = () => {
     <div className="container map">
       <div className="head">
         <h1 className="headline">Contact</h1>
-        <h4>address : 강남구 논현로128길 22-4</h4>
+        <h4>address : 강남구 논현로128길 22-4 세은빌딩 5층</h4>
       </div>
       <div id="map"></div>
     </div>

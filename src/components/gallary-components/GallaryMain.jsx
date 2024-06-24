@@ -20,7 +20,7 @@ const GallArea = styled.div`
       border-bottom: 3px solid var(--main);
     }
     h4 {
-      word-break: break-all;
+      word-break: keep-all;
       letter-spacing: 2px;
       line-height: 18px;
     }

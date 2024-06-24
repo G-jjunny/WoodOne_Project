@@ -15,6 +15,7 @@ const IdealComponents = styled.div`
     align-content: center;
     img {
       /* overflow: hidden; */
+      padding: 20px 0;
       width: 100%;
       transition: all.5s;
     }
@@ -33,7 +34,7 @@ const ToIdealLegno = () => {
         <img src={Ideal} alt="Edeal" />
       </div>
       <Link to={`${idealUrl}`} target="_blank">
-        <Button text="Ideal Legno" type="" />
+        <Button text="Ideal Legno" type="primary" />
       </Link>
     </IdealComponents>
   );

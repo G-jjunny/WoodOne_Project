@@ -26,6 +26,12 @@ const CollectionItems = styled.div`
   .pri {
     color: var(--dark-green);
   }
+  @media screen and (max-width: 500px) {
+    height: 200px;
+    .box {
+      height: 200px;
+    }
+  }
 `;
 
 const LineList = ({ item }) => {

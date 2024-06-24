@@ -10,7 +10,12 @@
   .collection-items {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .collection-head {
+    text-align: center;
   }
 }

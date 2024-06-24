@@ -42,7 +42,7 @@ const MainBanner = () => {
   }, []);
   const handleScroll = useCallback(() => {
     if (window.scrollY > 0) {
-      // 스크롤 위치가 100px 이상일 때
+      // 스크롤 위치가 0 이상일 때
       setVisible(false);
     } else {
       setVisible(true);
