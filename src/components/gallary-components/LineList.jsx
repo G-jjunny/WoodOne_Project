@@ -39,7 +39,6 @@ const CollectionItems = styled.div`
 
 const LineList = ({ item }) => {
   const { line, size } = item;
-  console.log(line);
   return (
     <CollectionItems>
       <div className="box"></div>

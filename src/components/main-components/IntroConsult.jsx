@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import consultMockup from "../../assets/consult-mockup.jpg";
+import consult from "../../assets/consult.png";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 
 const IntroConsultArea = styled.div`
   /* sample */
-  background-color: var(--green);
-  background-image: url(${consultMockup});
+  /* background-color: var(--green); */
+  background-image: url(${consult});
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -21,7 +22,8 @@ const IntroConsultArea = styled.div`
     gap: 20px;
   }
   .headline {
-    color: var(--bright);
+    /* color: var(--bright); */
+    color: var(--dark-green);
   }
   h4 {
     font-weight: 500;

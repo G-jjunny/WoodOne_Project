@@ -38,12 +38,12 @@ const IntroBox = styled.div`
     }
 
     .introduce {
-      padding: 20px 0;
+      padding: 50px 0;
       max-width: 800px;
       margin: auto;
       line-height: 30px;
       word-break: keep-all;
-      /* border-bottom: 3px solid var(--dark); */
+      border-bottom: 3px solid var(--dark);
       border-top: 3px solid var(--dark);
       animation: ${fadeIn} 1s ease-out forwards;
       animation-delay: 2s;

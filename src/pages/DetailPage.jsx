@@ -15,7 +15,7 @@ const DetailPage = () => {
       <div className="item-list">
         {data.size.map((i) => {
           return (
-            <div className="items">
+            <div className="items" key={i}>
               <div className="line">{i} Line</div>
               <div className="samole-list">
                 <div className="sample"></div>

@@ -18,15 +18,17 @@
   text-decoration: underline;
 }
 .btn.secondary {
-  color: var(--bright);
-  border-color: var(--bright);
+  // color: var(--bright);
+  // border-color: var(--bright);
+  color: var(--dark-green);
+  border-color: var(--dark-green);
 }
 .btn.secondary:hover {
   color: var(--bright);
   border-color: var(--bright);
   // background-color: var(--dark-green);
-  background-color: var(--main);
-  //   background-color: rgba(105, 136, 123, 0.6);
+  // background-color: var(--main);
+  background-color: rgba(105, 136, 123, 0.6);
   //   opacity: 0.6;
   text-decoration: underline;
 }

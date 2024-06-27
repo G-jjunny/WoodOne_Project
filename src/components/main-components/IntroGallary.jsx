@@ -51,7 +51,7 @@ const IntroGallary = () => {
         <div className="gallary-line">
           <h1 className="headline">COLLECTION</h1>
           <h4>
-            <span className="company-name">Sample</span> 텍스트 추가
+            {/* <span className="company-name">Sample</span> 텍스트 추가 */}
             {/* </h4>
           <h4> */}
             <br />

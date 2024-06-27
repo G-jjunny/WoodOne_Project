@@ -21,6 +21,9 @@ const MainBannerArea = styled.div`
     font-weight: 700;
     transition: all.8s;
   } */
+  @media screen and (max-width: 500px) {
+    background-position: center;
+  }
 `;
 const Title = styled.h1`
   color: var(--bright);
