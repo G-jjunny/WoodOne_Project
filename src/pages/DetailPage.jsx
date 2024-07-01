@@ -53,12 +53,16 @@ const DetailPage = () => {
               {sampleData[selectedSize].map((sample) => {
                 return (
                   <div className="sample" key={sample.index}>
-                    <img
-                      src={require(`../assets/Sample/${selectedSize}mm/${sample.url}`)}
-                      alt={sample.name}
-                    />
+                    <div className="img-area">
+                      <img
+                        src={require(`../assets/Sample/${selectedSize}mm/${sample.url}`)}
+                        alt={sample.name}
+                      />
+                    </div>
                     <div className="sample-name">{sample.name}</div>
-                    <div className="sample-des">Size {sample.des}</div>
+                    {sample.des && (
+                      <div className="sample-des">Size {sample.des}</div>
+                    )}
                   </div>
                 );
               })}

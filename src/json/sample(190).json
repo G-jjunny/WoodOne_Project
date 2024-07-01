@@ -4,132 +4,128 @@
     "line": 190,
     "name": "프로스트",
     "url": "1471 프로스트.JPG",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "2",
     "line": 190,
     "name": "샌드",
     "url": "1472 샌드.JPG",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "3",
     "line": 190,
     "name": "블루밍",
     "url": "1475 블루밍.JPG",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "4",
     "line": 190,
     "name": "클라우드",
     "url": "1477 클라우드.JPG",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "5",
     "line": 190,
     "name": "선셋",
     "url": "1478 선셋.JPG",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "6",
     "line": 190,
     "name": "포그",
     "url": "1479 포그.JPG",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "7",
     "line": 190,
     "name": "Antique",
     "url": "1309 Antique Oak 14x189x1860.jpg",
-    "size": "14x189x1860"
+    "des": "14x189x1860"
   },
   {
     "index": "8",
     "line": 190,
     "name": "Cloud Sawn",
     "url": "1310 Cloud Sawn.jpg",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "9",
     "line": 190,
     "name": "Sunset Sawn",
     "url": "1332 Sunset Sawn.jpg",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "10",
     "line": 190,
     "name": "Fog Sawn",
     "url": "1338 Fog Sawn.jpg",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "11",
     "line": 190,
     "name": "Antique Walnut",
     "url": "1602 Antique Walnut 14x190x1900.jpg",
-    "size": "14x190x1900"
+    "des": "14x190x1900"
   },
   {
     "index": "12",
     "line": 190,
-    "name": "name",
-    "url": ".jpg",
-    "size": "14x190x1900"
+    "name": "Oak Premium",
+    "url": "14 Oak Premium 14x190x1900.jpg",
+    "des": "14x190x1900"
   },
   {
     "index": "13",
     "line": 190,
-    "name": "name",
-    "url": ".jpg",
-    "size": "14x190x1900"
+    "name": "Oak Premium(EU)",
+    "url": "14-2 Oak Premium(EU).jpg",
+    "des": "14x190x1900"
   },
   {
     "index": "14",
     "line": 190,
-    "name": "name",
-    "url": ".jpg",
-    "size": "14x190x1900"
+    "name": "Light Smoke",
+    "url": "22 Light Smoke.jpg",
+    "des": "14x190x1900"
   },
   {
     "index": "15",
     "line": 190,
-    "name": "name",
-    "url": ".jpg",
-    "size": "14x190x1900"
+    "name": "Shell",
+    "url": "24 Shell.JPG",
+    "des": "14x190x1900"
   },
   {
     "index": "16",
     "line": 190,
-    "name": "name",
-    "url": ".jpg",
-    "size": "14x190x1900"
+    "name": "Black Bean",
+    "url": "104 Black Bean.jpg"
   },
   {
     "index": "17",
     "line": 190,
-    "name": "name",
-    "url": ".jpg",
-    "size": "14x190x1900"
+    "name": "Rice Sawn",
+    "url": "105 Rice Sawn.JPG"
   },
   {
     "index": "18",
     "line": 190,
-    "name": "name",
-    "url": ".jpg",
-    "size": "14x190x1900"
+    "name": "Pistachio",
+    "url": "107 Pistachio.JPG"
   },
   {
     "index": "19",
     "line": 190,
-    "name": "name",
-    "url": ".jpg",
-    "size": "14x190x1900"
+    "name": "Coconut",
+    "url": "110 Coconut.JPG"
   }
 ]
