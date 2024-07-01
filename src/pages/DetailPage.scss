@@ -25,17 +25,55 @@
     .items {
       .line {
         color: var(--bright);
-        font-size: 24px;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 2px solid var(--bright);
+      }
+      .controller {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
         margin-bottom: 20px;
       }
-      .samole-list {
-        display: flex;
-        gap: 20px;
-        .sample {
-          width: 100px;
-          height: 100px;
-          background-color: var(--main);
+      .nav-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: var(--bright);
+        &.active {
+          border-bottom: 2px solid var(--bright);
         }
+      }
+      .sample-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .sample {
+        // width: 100px;
+        // height: 100px;
+        // background-color: var(--main);
+        color: var(--bright);
+        margin-bottom: 20px;
+      }
+      img {
+        width: 250px;
+        // max-width: 300px;
+      }
+      .sample-name {
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      .sample-des {
+        display: flex;
+        margin-top: 10px;
       }
     }
   }

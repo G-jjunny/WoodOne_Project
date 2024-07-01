@@ -1,7 +1,7 @@
 import React from "react";
 import "./GallaryCollection.scss";
 import LineList from "./LineList";
-import collectionData from "../../CollectionLine.json";
+import collectionData from "../../json/CollectionLine.json";
 import ToIdealLegno from "./ToIdealLegno";
 
 const GallaryCollection = () => {

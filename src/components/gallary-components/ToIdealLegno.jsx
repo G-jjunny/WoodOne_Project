@@ -3,6 +3,7 @@ import Button from "../Button";
 import { Link } from "react-router-dom";
 import Ideal from "../../assets/Ideal-Legno-Logo.png";
 import styled from "styled-components";
+// import Ideal from "../../assets/Ideal-Legno-Logo.png";
 
 const IdealComponents = styled.div`
   /* width: 100%; */
@@ -31,7 +32,7 @@ const ToIdealLegno = () => {
   return (
     <IdealComponents>
       <div className="ideal">
-        <img src={Ideal} alt="Edeal" />
+        <img src={Ideal} alt="Ideal" />
       </div>
       <Link to={`${idealUrl}`} target="_blank">
         <Button text="Ideal Legno" type="primary" />

@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.scss";
 import GallaryPage from "./pages/GallaryPage";
 import PageMain from "./pages/PageMain";
