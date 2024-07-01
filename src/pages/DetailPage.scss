@@ -7,6 +7,7 @@
   .close {
     width: 100px;
     height: 100px;
+    font-size: 50px;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
@@ -24,10 +25,9 @@
     gap: 20px;
     .line {
       color: var(--bright);
-      font-size: 30px;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 20px;
-      text-align: center;
+      // text-align: center;
       padding: 20px 0;
       border-bottom: 2px solid var(--bright);
     }
@@ -46,7 +46,9 @@
       font-size: 16px;
       color: var(--bright);
       &.active {
-        border-bottom: 2px solid var(--bright);
+        color: var(--green);
+        border-bottom: 2px solid var(--green);
+        font-size: 18px;
       }
     }
     .sample-list {
@@ -78,13 +80,27 @@
     }
     .sample-name {
       font-weight: 700;
-      font-size: 20px;
+      // font-size: 20px;
       margin-top: 20px;
     }
     .sample-des {
       display: flex;
       margin-top: 10px;
     }
+  }
+  // ---------------MODAL Style------------------
+  .modal-area {
+    background-color: var(--main);
+    // width: 100%;
+    color: var(--dark);
+    display: flex;
+  }
+  .modal-img {
+    width: 300px;
+  }
+  .des-area {
+    display: flex;
+    flex-direction: column;
   }
   @media screen and (max-width: 1100px) {
     .item-list .sample {
