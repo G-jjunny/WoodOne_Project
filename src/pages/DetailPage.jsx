@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./DetailPage.scss";
 import { useNavigate } from "react-router-dom";
-import BackIcon from "../components/BackIcon";
 import collectionData from "../json/CollectionLine.json";
 import Sample70 from "../json/sample(70).json";
 import Sample90 from "../json/sample(90).json";
@@ -49,7 +48,7 @@ const DetailPage = () => {
             <IoMdClose
               style={{
                 fontSize: "40px",
-                position: "absolute",
+                position: "fixed",
                 cursor: "pointer",
               }}
               onClick={() => {
@@ -62,7 +61,8 @@ const DetailPage = () => {
               alt={itemState.index}
             />
             <div className="des-area">
-              <h1 className="en">{itemState.name}</h1>
+              <h1 className="headline">{itemState.name}</h1>
+              <h3>COLOR : </h3>
               <h3>SIZE : {itemState.des}</h3>
             </div>
           </div>

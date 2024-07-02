@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.scss";
 import { Link, useLocation } from "react-router-dom";
-
+import Logo from "../assets/logo.png";
 const NavBar = () => {
   const location = useLocation();
   const hideNavBarPaths = ["/collection/:id"]; // 숨길 경로를 배열로 정의
@@ -17,7 +17,8 @@ const NavBar = () => {
         <div className="nav">
           <div className="container">
             <Link to={"/"}>
-              <h2 className="logo">WoodOne</h2>
+              {/* <h2 className="logo">WoodOne</h2> */}
+              <img src={Logo} alt="logo" className="logo" />
             </Link>
             <div className="nav-gnv">
               <Link to="/collection">

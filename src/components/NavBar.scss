@@ -1,7 +1,7 @@
 .nav {
   position: fixed;
   width: 100vw;
-  padding: 10px 0;
+  // padding: 10px 0;
   font-family: "Poppins", sans-serif;
   z-index: 100;
 
@@ -14,6 +14,7 @@
   .logo {
     font-weight: 700;
     transition: 0.5s;
+    width: 150px;
   }
   .logo:hover {
     color: var(--second);
@@ -27,6 +28,11 @@
     }
     h3:hover {
       text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .logo {
+      width: 100px;
     }
   }
 }

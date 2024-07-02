@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import consultMockup from "../../assets/consult-mockup.jpg";
 import consult from "../../assets/consult.png";
+import sss from "../../assets/sss.jpg";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 
@@ -9,6 +9,7 @@ const IntroConsultArea = styled.div`
   /* sample */
   /* background-color: var(--green); */
   background-image: url(${consult});
+  /* background-image: url(${sss}); */
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
