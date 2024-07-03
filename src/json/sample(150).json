@@ -2,56 +2,64 @@
   {
     "index": "1",
     "line": 150,
-    "name": "Hazelnut",
+    "name": "Oak",
+    "color": "Hazelnut",
     "url": "01 Hazelnut 12x190x1900.JPG",
     "des": "12x190x1900"
   },
   {
     "index": "2",
     "line": 150,
-    "name": "Cotton",
+    "name": "Oak",
+    "color": "Cotton",
     "url": "42 Cotton 12x190x1900.JPG",
     "des": "12x190x1900"
   },
   {
     "index": "3",
     "line": 150,
-    "name": "Chest",
+    "name": "Oak",
+    "color": "Chest",
     "url": "45 Chest  12x190x1900.JPG",
     "des": "12x190x1900"
   },
   {
     "index": "4",
     "line": 150,
-    "name": "Canvas",
+    "name": "Oak",
+    "color": "Canvas",
     "url": "46 Canvas 12x190x1900.JPG",
     "des": "12x190x1900"
   },
   {
     "index": "5",
     "line": 150,
-    "name": "Denim",
+    "name": "Oak",
+    "color": "Denim",
     "url": "47 Denim 12x190x1900.JPG",
     "des": "12x190x1900"
   },
   {
     "index": "6",
     "line": 150,
-    "name": "Vanilla",
+    "name": "Oak",
+    "color": "Vanilla",
     "url": "48 Vanilla 12x190x1900.JPG",
     "des": "12x190x1900"
   },
   {
     "index": "7",
     "line": 150,
-    "name": "Fume",
+    "name": "Oak",
+    "color": "Fume",
     "url": "50 Fume 12x190x1900.JPG",
     "des": "12x190x1900"
   },
   {
     "index": "8",
     "line": 150,
-    "name": "Vintage Oak",
+    "name": "Oak",
+    "color": "Vintage Oak",
     "url": "51 Vintage Oak 12x190x1900.JPG",
     "des": "12x190x1900"
   },
@@ -59,48 +67,55 @@
     "index": "9",
     "line": 150,
     "name": "Oak",
+    "color": "Oak",
     "url": "241 Oak 14(1.2)x240x2200.JPG",
     "des": "14(1.2)x240x2200"
   },
   {
     "index": "10",
     "line": 150,
-    "name": "Cotton",
+    "name": "Oak",
+    "color": "Cotton",
     "url": "242 Cotton 14(1.2)x240x2200.JPG",
     "des": "14(1.2)x240x2200"
   },
   {
     "index": "11",
     "line": 150,
-    "name": "Linen",
+    "name": "Oak",
+    "color": "Linen",
     "url": "243 Linen 14(1.2)x240x2200.JPG",
     "des": "14(1.2)x240x2200"
   },
   {
     "index": "12",
     "line": 150,
-    "name": "Alpaca",
+    "name": "Oak",
+    "color": "Alpaca",
     "url": "Alpaca 10x165x1200.jpg",
     "des": "10x165x1200"
   },
   {
     "index": "13",
     "line": 150,
-    "name": "Black",
+    "name": "Oak",
+    "color": "Black",
     "url": "Black 10x165x1200.jpg",
     "des": "10x165x1200"
   },
   {
     "index": "14",
     "line": 150,
-    "name": "Cotton",
+    "name": "Oak",
+    "color": "Cotton",
     "url": "Cotton 10x165x1200.jpg",
     "des": "10x165x1200"
   },
   {
     "index": "15",
     "line": 150,
-    "name": "Linen",
+    "name": "Oak",
+    "color": "Linen",
     "url": "Linen 10x165x1200.jpg",
     "des": "10x165x1200"
   },
@@ -108,13 +123,15 @@
     "index": "16",
     "line": 150,
     "name": "Oak",
+    "color": "Oak",
     "url": "Oak 10x165x1200.jpg",
     "des": "10x165x1200"
   },
   {
     "index": "17",
     "line": 150,
-    "name": "Rayon",
+    "name": "Oak",
+    "color": "Rayon",
     "url": "Rayon 10x167x1200.jpg",
     "des": "10x167x1200"
   },
@@ -122,6 +139,7 @@
     "index": "18",
     "line": 150,
     "name": "Teak",
+    "color": "Teak",
     "url": "Teak 10x150x1200.jpg",
     "des": "10x150x1200"
   },
@@ -129,13 +147,15 @@
     "index": "19",
     "line": 150,
     "name": "Walnut",
+    "color": "Walnut",
     "url": "Walnut 10x165x1200.jpg",
     "des": "10x165x1200"
   },
   {
     "index": "20",
     "line": 150,
-    "name": "Wool",
+    "name": "Oak",
+    "color": "Wool",
     "url": "Wool 10x167x1200.jpg",
     "des": "10x167x1200"
   }

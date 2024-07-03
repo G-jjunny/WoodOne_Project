@@ -3,13 +3,15 @@
     "index": "1",
     "line": 70,
     "name": "Birch",
+    "color": "Birch",
     "url": "Birch.png",
     "des": "10x70x600"
   },
   {
     "index": "2",
     "line": 70,
-    "name": "Black",
+    "name": "Oak",
+    "color": "WC Black",
     "url": "Black.jpg",
     "des": "10x70x490.600"
   },
@@ -17,6 +19,7 @@
     "index": "3",
     "line": 70,
     "name": "Maple",
+    "color": "Maple",
     "url": "Maple.png",
     "des": "10x70x600"
   },
@@ -24,6 +27,7 @@
     "index": "4",
     "line": 70,
     "name": "Oak",
+    "color": "WC",
     "url": "Oak.png",
     "des": "10x70x600"
   },
@@ -31,6 +35,7 @@
     "index": "5",
     "line": 70,
     "name": "Teak",
+    "color": "Teak",
     "url": "Teak.jpg",
     "des": "10x70x600"
   },
@@ -38,6 +43,7 @@
     "index": "6",
     "line": 70,
     "name": "Teak(in)",
+    "color": "Teak(in)",
     "url": "Teak(in).png",
     "des": "10x70x600"
   },
@@ -45,13 +51,15 @@
     "index": "7",
     "line": 70,
     "name": "Walnut",
+    "color": "Walnut",
     "url": "Walnut.jpg",
     "des": "10x70x600"
   },
   {
     "index": "8",
     "line": 70,
-    "name": "Wash Oak",
+    "name": "Oak",
+    "color": "Wash Oak",
     "url": "WashOak.png",
     "des": "10x70x600"
   }

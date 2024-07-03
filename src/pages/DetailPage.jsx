@@ -29,6 +29,7 @@ const DetailPage = () => {
     index: "",
     line: "",
     name: "",
+    color: "",
     url: "",
     des: "",
   });
@@ -62,7 +63,7 @@ const DetailPage = () => {
             />
             <div className="des-area">
               <h1 className="headline">{itemState.name}</h1>
-              <h3>COLOR : </h3>
+              <h3>COLOR : {itemState.color}</h3>
               <h3>SIZE : {itemState.des}</h3>
             </div>
           </div>
@@ -102,17 +103,25 @@ const DetailPage = () => {
                                 index: sample.index,
                                 line: selectedSize,
                                 name: sample.name,
+                                color: sample.color,
                                 url: sample.url,
                                 des: sample.des,
                               });
                             }}
                           />
                         </div>
-                        <div className="sample-name">
+                        {/* <div className="sample-name">
                           <h3 className="en">{sample.name}</h3>
+                        </div> */}
+                        <div className="sample-des">
+                          <span className="des-head">Color :</span>
+                          <span className="en semibold">{sample.color}</span>
                         </div>
                         {sample.des && (
-                          <div className="sample-des">Size : {sample.des}</div>
+                          <div className="sample-des">
+                            <span className="des-head">Size :</span>
+                            {sample.des}
+                          </div>
                         )}
                       </div>
                     </>

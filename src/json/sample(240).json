@@ -2,56 +2,64 @@
   {
     "index": "1",
     "line": 240,
-    "name": "Oak Brush",
+    "name": "Oak",
+    "color": "Brush",
     "url": "2401 Oak Brush 15x240x2200.jpg",
     "des": "15x240x2200"
   },
   {
     "index": "2",
     "line": 240,
-    "name": "Midnight",
+    "name": "Oak",
+    "color": "Midnight",
     "url": "2402 Midnight.jpg",
     "des": "15x240x2200"
   },
   {
     "index": "3",
     "line": 240,
-    "name": "Dove",
+    "name": "Oak",
+    "color": "Dove",
     "url": "2403 Dove.jpg",
     "des": "15x240x2200"
   },
   {
     "index": "4",
     "line": 240,
-    "name": "Crystal",
+    "name": "Oak",
+    "color": "Crystal",
     "url": "2411 Crystal.JPG",
     "des": "15x240x2200"
   },
   {
     "index": "5",
     "line": 240,
-    "name": "Jade",
+    "name": "Oak",
+    "color": "WC Jade",
     "url": "2413 Jade.JPG",
     "des": "15x240x2200"
   },
   {
     "index": "6",
     "line": 240,
-    "name": "Clay",
+    "name": "Oak",
+    "color": "Clay",
     "url": "2414 Clay.JPG",
     "des": "15x240x2200"
   },
   {
     "index": "7",
     "line": 240,
-    "name": "Bronze",
+    "name": "Oak",
+    "color": "Bronze",
     "url": "2415 Bronze.JPG",
     "des": "15x240x2200"
   },
   {
     "index": "8",
     "line": 240,
-    "name": "Ebony",
+    "name": "Oak",
+    "color": "Ebony",
     "url": "2416 Ebony.JPG",
     "des": "15x240x2200"
   }

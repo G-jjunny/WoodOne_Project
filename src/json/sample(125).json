@@ -2,7 +2,8 @@
   {
     "index": "1",
     "line": 125,
-    "name": "Beige",
+    "name": "Oak",
+    "color": "Beige",
     "url": "Beige 10x125x810.jpg",
     "des": "10x125x810"
   },
@@ -10,111 +11,127 @@
     "index": "2",
     "line": 125,
     "name": "Birch",
+    "color": "Birch",
     "url": "Birch 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "3",
     "line": 125,
-    "name": "Black Wash",
+    "name": "Oak",
+    "color": "Black Wash",
     "url": "Black Wash 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "4",
     "line": 125,
-    "name": "Brown",
+    "name": "Oak",
+    "color": "Brown",
     "url": "Brown 10x125x810.jpg",
     "des": "10x125x810"
   },
   {
     "index": "5",
     "line": 125,
-    "name": "Cinnamon",
+    "name": "Oak",
+    "color": "Cinnamon",
     "url": "Cinnamon 12x150x1200.jpg",
     "des": "12x150x1200"
   },
   {
     "index": "6",
     "line": 125,
-    "name": "Dark Beige",
+    "name": "Oak",
+    "color": "Dark Beige",
     "url": "Dark Beige 10x125x810.jpg",
     "des": "10x125x810"
   },
   {
     "index": "7",
     "line": 125,
-    "name": "Dark Brown",
+    "name": "Oak",
+    "color": "Dark Brown",
     "url": "Dark Brown 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "8",
     "line": 125,
-    "name": "Ivory",
+    "name": "Oak",
+    "color": "Ivory",
     "url": "Ivory 10x125x810.jpg",
     "des": "10x125x810"
   },
   {
     "index": "9",
     "line": 125,
-    "name": "Oak Brush",
+    "name": "Oak",
+    "color": "Oak Brush",
     "url": "Oak Brush 10x125x810.jpg",
     "des": "10x125x810"
   },
   {
     "index": "10",
     "line": 125,
-    "name": "Oak Sawn",
+    "name": "Oak",
+    "color": "Oak Sawn",
     "url": "oak-sawn 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "11",
     "line": 125,
-    "name": "Olive",
+    "name": "Oak",
+    "color": "Olive",
     "url": "Olive 10x150x1200.jpg",
     "des": "10x150x1200"
   },
   {
     "index": "12",
     "line": 125,
-    "name": "Pumpkin",
+    "name": "Oak",
+    "color": "Pumpkin",
     "url": "Pumpkin 10x150x1200.jpg",
     "des": "10x150x1200"
   },
   {
     "index": "13",
     "line": 125,
-    "name": "Rust Brown",
+    "name": "Oak",
+    "color": "Rust Brown",
     "url": "Rust Brown 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "14",
     "line": 125,
-    "name": "Teak Brush",
+    "name": "Teak",
+    "color": "Teak Brush",
     "url": "Teak Brush 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "15",
     "line": 125,
-    "name": "Walnut Brush",
+    "name": "Walnut",
+    "color": "Walnut Brush",
     "url": "Walnut Brush 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "16",
     "line": 125,
-    "name": "Wash Oak",
+    "name": "Oak",
+    "color": "Wash Oak",
     "url": "Wash Oak 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "17",
     "line": 125,
-    "name": "White Oak",
+    "name": "Oak",
+    "color": "White Oak",
     "url": "White Oak 10x125x810.jpg",
     "des": "10x125x810"
   }
