@@ -24,6 +24,23 @@ const IdealComponents = styled.div`
       scale: 1.1;
     }
   }
+  .line {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    .ideal {
+      width: 100%;
+    }
+    .line {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: end;
+    }
+  }
 `;
 
 const ToIdealLegno = () => {
@@ -34,9 +51,12 @@ const ToIdealLegno = () => {
       <div className="ideal">
         <img src={Ideal} alt="Ideal" />
       </div>
-      <Link to={`${idealUrl}`} target="_blank">
-        <Button text="Ideal Legno" type="primary" />
-      </Link>
+      <div className="line">
+        <h2 className="en semibold">Ideal Legno</h2>
+        <Link to={`${idealUrl}`} target="_blank">
+          <Button text="자세히 보기" type="primary" />
+        </Link>
+      </div>
     </IdealComponents>
   );
 };

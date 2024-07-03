@@ -1,14 +1,14 @@
 import React, { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
-import mainBanner from "../../assets/mainbanner.jpg";
-import bgMain from "../../assets/bgMain.jpg";
+// import mainBanner from "../../assets/mainbanner.jpg";
+// import bgMain from "../../assets/bgMain.jpg";
+import bgMainPressed from "../../assets/banner.jpg";
 
 const MainBannerArea = styled.div`
   width: 100vw;
   height: 100vh;
   margin-bottom: 150px;
-  /* background: url(${mainBanner}); */
-  background: url(${bgMain});
+  background: url(${bgMainPressed});
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;

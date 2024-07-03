@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../Button";
 import { Link } from "react-router-dom";
-import GallaryMockUp from "../../assets/gallary-mockup.png";
+import GallaryMockUp from "../../assets/gallary-mockup.jpg";
 
 const IntroGallaryArea = styled.div`
   padding: 200px 0;
@@ -54,8 +54,8 @@ const IntroGallary = () => {
             {/* <span className="company-name">Sample</span> 텍스트 추가 */}
             {/* </h4>
           <h4> */}
-            <br />
-            <br />
+            {/* <br />
+            <br /> */}
             <span className="company-name">WoodOne</span>만의 특별한
             <span className="company-name">Collection</span>를 경험해보세요
           </h4>

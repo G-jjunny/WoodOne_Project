@@ -32,3 +32,10 @@
   //   opacity: 0.6;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 500px) {
+  .btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
