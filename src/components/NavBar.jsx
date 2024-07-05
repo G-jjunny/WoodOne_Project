@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./NavBar.scss";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/logo.png";
 const NavBar = () => {
   const location = useLocation();
+  // const [] = useState();
   const hideNavBarPaths = ["/collection/:id"]; // 숨길 경로를 배열로 정의
 
   const isNavBarHidden = hideNavBarPaths.some((path) => {
@@ -11,6 +12,10 @@ const NavBar = () => {
     const regex = new RegExp(`^${match}$`);
     return regex.test(location.pathname);
   });
+
+  // todo -- scrollY가 0이상일때 background color 지정
+  // useEffect(() => {}, []);
+
   return (
     <>
       {!isNavBarHidden && (

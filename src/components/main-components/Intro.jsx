@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import Logo from "../../assets/logo.png";
+import "animate.css";
 
 const IntroBox = styled.div`
   padding: 100px 0;
@@ -40,8 +41,8 @@ const Intro = () => {
     <IntroBox>
       <div className="container">
         <img src={Logo} alt="logo" className="big-logo" />
-        <div className="intro-line">
-          <h1 className="headline">SINCE.1996</h1>
+        <div className="intro-line animate__animated animate__fadeInRightBig">
+          <h1 className="headline ">SINCE.1996</h1>
           <h4>
             <span className="company-name">WoodOne</span>이 제안하는 프리미엄
             마루
