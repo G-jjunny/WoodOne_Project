@@ -48,7 +48,7 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 18px;
       color: var(--bright);
       &.active {
         color: var(--green);
@@ -167,6 +167,7 @@
     // object-fit: cover;
   }
   .des-area {
+    width: fit-content;
     left: 70px;
     top: 120px;
     background-color: var(--green);
@@ -178,6 +179,7 @@
   }
   .des-area {
     background-color: transparent;
+    width: 100%;
     position: static;
     margin: 0;
   }

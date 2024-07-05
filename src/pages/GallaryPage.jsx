@@ -1,6 +1,5 @@
 import React from "react";
 import PageHeader from "../components/PageHeader";
-import bgHeader from "../assets/gall.jpg";
 import sss from "../assets/sss.jpg";
 import GallaryMain from "../components/gallary-components/GallaryMain";
 import GallaryCollection from "../components/gallary-components/GallaryCollection";

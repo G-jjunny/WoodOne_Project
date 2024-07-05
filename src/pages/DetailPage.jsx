@@ -113,12 +113,12 @@ const DetailPage = () => {
                         {/* <div className="sample-name">
                           <h3 className="en">{sample.name}</h3>
                         </div> */}
-                        <div className="sample-des">
+                        <div className="sample-des en">
                           <span className="des-head">Color :</span>
-                          <span className="en semibold">{sample.color}</span>
+                          <span className="semibold">{sample.color}</span>
                         </div>
                         {sample.des && (
-                          <div className="sample-des">
+                          <div className="sample-des en">
                             <span className="des-head">Size :</span>
                             {sample.des}
                           </div>

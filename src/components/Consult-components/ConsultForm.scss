@@ -4,13 +4,12 @@
   //   background-color: var(--second);
   // padding: 150px 0;
   // background-image: url("../../assets/form-mockup.png");
-  background-image: url("../../assets/notemockup.png");
+  background-image: url("../../assets/notemockup.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   align-content: center;
   position: relative;
-
   .blur {
     backdrop-filter: blur(5px);
     height: 100%;
@@ -27,6 +26,8 @@
     margin-right: 5px;
   }
   form {
+    margin: auto;
+    width: max-content;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -42,6 +43,7 @@
   .input-head {
     display: flex;
     align-items: center;
+
     min-width: 100px;
   }
   input {
@@ -75,7 +77,12 @@
     font-weight: 500;
     color: var(--dark);
   }
-
+  .submit_button {
+    width: 100%;
+    &:hover {
+      background-color: var(--bright);
+    }
+  }
   @media screen and (max-width: 500px) {
     label {
       flex-direction: column;

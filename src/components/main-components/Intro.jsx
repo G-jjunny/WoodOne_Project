@@ -1,16 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
+import Logo from "../../assets/logo.png";
 
 const IntroBox = styled.div`
   padding: 100px 0;
@@ -19,39 +9,28 @@ const IntroBox = styled.div`
   .container {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     gap: 25px;
-
+    .big-logo {
+      width: 300px;
+      margin: 0 auto;
+      padding-bottom: 100px;
+    }
     .intro-line {
-      animation: ${fadeIn} 1s ease-out forwards;
-      animation-delay: 0.5s;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 25px;
+      border-bottom: 3px solid var(--dark);
     }
-
-    .headline {
-      animation: ${fadeIn} 1s ease-out forwards;
-      animation-delay: 1s;
-    }
-
-    .company-name {
-      animation: ${fadeIn} 1s ease-out forwards;
-      animation-delay: 1.5s;
-    }
-
     .introduce {
-      padding: 50px 0;
+      /* padding: 50px 0; */
       max-width: 800px;
       margin: auto;
       line-height: 30px;
       word-break: keep-all;
-      border-bottom: 3px solid var(--dark);
-      border-top: 3px solid var(--dark);
-      animation: ${fadeIn} 1s ease-out forwards;
-      animation-delay: 2s;
-
-      .des {
-        animation: ${fadeIn} 1s ease-out forwards;
-        animation-delay: 2.5s;
-      }
     }
   }
 `;
@@ -60,15 +39,18 @@ const Intro = () => {
   return (
     <IntroBox>
       <div className="container">
-        <div className="intro-line"></div>
-        <h1 className="headline">WoodOne</h1>
-        <h4>
-          <span className="company-name">WoodOne</span>이 제안하는 프리미엄 마루
-        </h4>
+        <img src={Logo} alt="logo" className="big-logo" />
+        <div className="intro-line">
+          <h1 className="headline">SINCE.1996</h1>
+          <h4>
+            <span className="company-name">WoodOne</span>이 제안하는 프리미엄
+            마루
+          </h4>
+        </div>
         <div className="introduce">
           <h4 className="des">
             우드원은 1996년 설립되어 현재에 이르기까지 원목마루만을
-            수입,유통,판매하고 있습니다
+            수입,유통,판매하고 있습니다.
             <br />
             고급 소재로는 이탈리아 명품{" "}
             <span className="company-name">IDEAL Legno</span> 를 수입 유통하고
