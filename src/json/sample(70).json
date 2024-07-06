@@ -3,9 +3,10 @@
     "index": "1",
     "line": 70,
     "name": "Birch",
-    "color": "Birch",
+    "color": "Natural",
     "url": "Birch.png",
-    "des": "10x70x600"
+    "des": "10x70x600",
+    "type": "헤링본가능"
   },
   {
     "index": "2",
@@ -13,47 +14,53 @@
     "name": "Oak",
     "color": "WC Black",
     "url": "Black.jpg",
-    "des": "10x70x490.600"
+    "des": "10x70x490.600",
+    "type": "헤링본가능"
   },
   {
     "index": "3",
     "line": 70,
     "name": "Maple",
-    "color": "Maple",
+    "color": "Natural",
     "url": "Maple.png",
-    "des": "10x70x600"
+    "des": "10x70x600",
+    "type": "헤링본가능"
   },
   {
     "index": "4",
     "line": 70,
     "name": "Oak",
-    "color": "WC",
+    "color": "Natural Brush",
     "url": "Oak.png",
-    "des": "10x70x600"
+    "des": "10x70x600",
+    "type": "헤링본가능"
   },
   {
     "index": "5",
     "line": 70,
     "name": "Teak",
-    "color": "Teak",
+    "color": "Natural Brush",
     "url": "Teak.jpg",
-    "des": "10x70x600"
+    "des": "10x70x600",
+    "type": "헤링본가능"
   },
   {
     "index": "6",
     "line": 70,
     "name": "Teak(in)",
-    "color": "Teak(in)",
+    "color": "Natural",
     "url": "Teak(in).png",
-    "des": "10x70x600"
+    "des": "10x70x600",
+    "type": "헤링본가능"
   },
   {
     "index": "7",
     "line": 70,
     "name": "Walnut",
-    "color": "Walnut",
+    "color": "Natural Brush",
     "url": "Walnut.jpg",
-    "des": "10x70x600"
+    "des": "10x70x600",
+    "type": "헤링본가능"
   },
   {
     "index": "8",
@@ -61,6 +68,7 @@
     "name": "Oak",
     "color": "Wash Oak",
     "url": "WashOak.png",
-    "des": "10x70x600"
+    "des": "10x70x600",
+    "type": "헤링본가능"
   }
 ]

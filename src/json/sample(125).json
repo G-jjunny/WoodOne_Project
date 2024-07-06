@@ -3,15 +3,16 @@
     "index": "1",
     "line": 125,
     "name": "Oak",
-    "color": "Beige",
+    "color": "WC Beige",
     "url": "Beige 10x125x810.jpg",
-    "des": "10x125x810"
+    "des": "10x125x810",
+    "type": "헤링본시공 가능"
   },
   {
     "index": "2",
     "line": 125,
     "name": "Birch",
-    "color": "Birch",
+    "color": "WC Brich Natural",
     "url": "Birch 10x125x900.jpg",
     "des": "10x125x900"
   },
@@ -19,7 +20,7 @@
     "index": "3",
     "line": 125,
     "name": "Oak",
-    "color": "Black Wash",
+    "color": "WC Black Wash",
     "url": "Black Wash 10x125x900.jpg",
     "des": "10x125x900"
   },
@@ -27,112 +28,96 @@
     "index": "4",
     "line": 125,
     "name": "Oak",
-    "color": "Brown",
+    "color": "WC Brown",
     "url": "Brown 10x125x810.jpg",
-    "des": "10x125x810"
+    "des": "10x125x810",
+    "type": "헤링본시공 가능"
   },
+
   {
     "index": "5",
     "line": 125,
     "name": "Oak",
-    "color": "Cinnamon",
-    "url": "Cinnamon 12x150x1200.jpg",
-    "des": "12x150x1200"
+    "color": "WC Dark Beige",
+    "url": "Dark Beige 10x125x810.jpg",
+    "des": "10x125x810",
+    "type": "헤링본시공 가능"
   },
   {
     "index": "6",
     "line": 125,
     "name": "Oak",
-    "color": "Dark Beige",
-    "url": "Dark Beige 10x125x810.jpg",
-    "des": "10x125x810"
+    "color": "WC Dark Brown",
+    "url": "Dark Brown 10x125x900.jpg",
+    "des": "10x125x900",
+    "type": "헤링본시공 가능"
   },
   {
     "index": "7",
     "line": 125,
     "name": "Oak",
-    "color": "Dark Brown",
-    "url": "Dark Brown 10x125x900.jpg",
-    "des": "10x125x900"
+    "color": "WC Ivory",
+    "url": "Ivory 10x125x810.jpg",
+    "des": "10x125x810",
+    "type": "헤링본시공 가능"
   },
   {
     "index": "8",
     "line": 125,
     "name": "Oak",
-    "color": "Ivory",
-    "url": "Ivory 10x125x810.jpg",
-    "des": "10x125x810"
+    "color": "WC Brush Natural",
+    "url": "Oak Brush 10x125x810.jpg",
+    "des": "10x125x810",
+    "type": "헤링본시공 가능"
   },
   {
     "index": "9",
     "line": 125,
     "name": "Oak",
-    "color": "Oak Brush",
-    "url": "Oak Brush 10x125x810.jpg",
-    "des": "10x125x810"
+    "color": "WC Sawn Oak",
+    "url": "oak-sawn 10x125x900.jpg",
+    "des": "10x125x900"
   },
+
   {
     "index": "10",
     "line": 125,
     "name": "Oak",
-    "color": "Oak Sawn",
-    "url": "oak-sawn 10x125x900.jpg",
+    "color": "WC Rust Brown",
+    "url": "Rust Brown 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "11",
     "line": 125,
-    "name": "Oak",
-    "color": "Olive",
-    "url": "Olive 10x150x1200.jpg",
-    "des": "10x150x1200"
+    "name": "Teak",
+    "color": "WC Brush Natural",
+    "url": "Teak Brush 10x125x900.jpg",
+    "des": "10x125x900"
   },
   {
     "index": "12",
     "line": 125,
-    "name": "Oak",
-    "color": "Pumpkin",
-    "url": "Pumpkin 10x150x1200.jpg",
-    "des": "10x150x1200"
+    "name": "Walnut",
+    "color": "WC Brush Natural",
+    "url": "Walnut Brush 10x125x900.jpg",
+    "des": "10x125x900"
   },
   {
     "index": "13",
     "line": 125,
     "name": "Oak",
-    "color": "Rust Brown",
-    "url": "Rust Brown 10x125x900.jpg",
+    "color": "WC Wash Oak",
+    "url": "Wash Oak 10x125x900.jpg",
     "des": "10x125x900"
   },
   {
     "index": "14",
     "line": 125,
-    "name": "Teak",
-    "color": "Teak Brush",
-    "url": "Teak Brush 10x125x900.jpg",
-    "des": "10x125x900"
-  },
-  {
-    "index": "15",
-    "line": 125,
-    "name": "Walnut",
-    "color": "Walnut Brush",
-    "url": "Walnut Brush 10x125x900.jpg",
-    "des": "10x125x900"
-  },
-  {
-    "index": "16",
-    "line": 125,
     "name": "Oak",
-    "color": "Wash Oak",
-    "url": "Wash Oak 10x125x900.jpg",
-    "des": "10x125x900"
-  },
-  {
-    "index": "17",
-    "line": 125,
-    "name": "Oak",
-    "color": "White Oak",
+    "color": "WC White Oak",
     "url": "White Oak 10x125x810.jpg",
-    "des": "10x125x810"
+    "des": "10x125x810",
+    "type": "헤링본시공 가능"
   }
 ]

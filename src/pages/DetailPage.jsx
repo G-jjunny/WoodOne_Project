@@ -6,6 +6,7 @@ import Sample70 from "../json/sample(70).json";
 import Sample90 from "../json/sample(90).json";
 import Sample125 from "../json/sample(125).json";
 import Sample150 from "../json/sample(150).json";
+import Sample165 from "../json/sample(165).json";
 import Sample190 from "../json/sample(190).json";
 import Sample240 from "../json/sample(240).json";
 import { IoIosArrowBack, IoMdClose } from "react-icons/io";
@@ -17,6 +18,7 @@ const sampleData = {
   90: Sample90,
   125: Sample125,
   150: Sample150,
+  165: Sample165,
   190: Sample190,
   240: Sample240,
 };
@@ -32,6 +34,7 @@ const DetailPage = () => {
     color: "",
     url: "",
     des: "",
+    type: "",
   });
   const data = collectionData[0];
 
@@ -65,6 +68,7 @@ const DetailPage = () => {
               <h1 className="headline">{itemState.name}</h1>
               <h3>COLOR : {itemState.color}</h3>
               <h3>SIZE : {itemState.des}</h3>
+              {itemState.type && <h3>TYPE : {itemState.type}</h3>}
             </div>
           </div>
         </Modal>
@@ -106,6 +110,7 @@ const DetailPage = () => {
                                 color: sample.color,
                                 url: sample.url,
                                 des: sample.des,
+                                type: sample.type,
                               });
                             }}
                           />
