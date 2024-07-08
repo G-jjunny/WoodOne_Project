@@ -4,6 +4,13 @@
   // padding: 10px 0;
   font-family: "Poppins", sans-serif;
   z-index: 100;
+  transition: 0.8s;
+  padding: 5px 0;
+  &.view {
+    background-color: var(--bright);
+    border-bottom: 1px solid #aaa;
+    box-shadow: 0px 1px 2px #aaa;
+  }
   .container {
     margin: 0 auto;
     display: flex;
@@ -21,6 +28,10 @@
   .nav-gnv {
     display: flex;
     gap: 20px;
+    color: #999;
+    .active {
+      color: var(--dark);
+    }
     h3 {
       font-weight: 500;
       padding: 3px 0;

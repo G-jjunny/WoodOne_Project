@@ -39,7 +39,7 @@ const GallaryMain = () => {
             <br /> 친환경 마루재인 이태리 명품 원목마루{" "}
             <span className="hilight">Ideal Legno</span>제품과
             <br />
-            원목마루의 대중화를 위한 인도네시아{" "}
+            원목마루의 대중화를 위한{" "}
             <span className="hilight">Green Forest</span> 제품을 수입 판매를
             하고있습니다.
           </h4>

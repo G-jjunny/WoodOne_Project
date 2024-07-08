@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 import GreenForest from "../../assets/greenforest.jpg";
+import { motion } from "framer-motion";
 
 const CollectionItems = styled.div`
   width: 100%;
@@ -46,9 +47,17 @@ const LineList = ({ item }) => {
   const { line, size } = item;
   return (
     <CollectionItems>
-      <div className="box">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { delay: 0.1, duration: 1.3 },
+        }}
+        className="box"
+      >
         {/* <img src={GreenForest} alt="GreenForest" /> */}
-      </div>
+      </motion.div>
       <div className="line">
         {/* <h4 className="pri">collection</h4> */}
         <h2 className="en semibold">{line}</h2>

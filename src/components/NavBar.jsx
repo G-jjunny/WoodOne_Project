@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./NavBar.scss";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "../assets/logo.png";
 const NavBar = () => {
   const location = useLocation();
@@ -14,24 +14,48 @@ const NavBar = () => {
   });
 
   // todo -- scrollY가 0이상일때 background color 지정
-  // useEffect(() => {}, []);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    // 컴포넌트 마운트 시 h1 요소를 나타나게 함
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 500); // 약간의 지연 후에 h1 요소를 나타나게 함
+
+    return () => clearTimeout(timer); // 컴포넌트 언마운트 시 타이머 정리
+  }, []);
+  const handleScroll = useCallback(() => {
+    if (window.scrollY > 0) {
+      // 스크롤 위치가 0 이상일 때
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [handleScroll]);
 
   return (
     <>
       {!isNavBarHidden && (
-        <div className="nav">
+        <div className={`nav ${visible ? "" : "view"}`}>
           <div className="container">
             <Link to={"/"}>
               {/* <h2 className="logo">WoodOne</h2> */}
               <img src={Logo} alt="logo" className="logo" />
             </Link>
             <div className="nav-gnv">
-              <Link to="/collection">
+              <NavLink to="/collection">
                 <h3>collection</h3>
-              </Link>
-              <Link to="/consult">
+              </NavLink>
+              <NavLink to="/consult">
                 <h3>consult</h3>
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
+import React, { useCallback, useEffect, useState } from "react";
+import styled from "styled-components";
 import Logo from "../../assets/logo.png";
-import "animate.css";
+import { motion } from "framer-motion";
 
 const IntroBox = styled.div`
   padding: 100px 0;
@@ -41,14 +41,39 @@ const Intro = () => {
     <IntroBox>
       <div className="container">
         <img src={Logo} alt="logo" className="big-logo" />
-        <div className="intro-line animate__animated animate__fadeInRightBig">
-          <h1 className="headline ">SINCE.1996</h1>
-          <h4>
-            <span className="company-name">WoodOne</span>이 제안하는 프리미엄
+        <div className="intro-line ">
+          <motion.h1
+            initial={{ opacity: 0, x: 200 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { delay: 0, duration: 1 },
+            }}
+            className={`headline `}
+          >
+            SINCE.1996
+          </motion.h1>
+          <motion.h4
+            initial={{ opacity: 0, x: 200 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { delay: 0.5, duration: 1 },
+            }}
+          >
+            <span className="company-name ">WoodOne</span>이 제안하는 프리미엄
             마루
-          </h4>
+          </motion.h4>
         </div>
-        <div className="introduce">
+        <motion.div
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { delay: 1, duration: 1 },
+          }}
+          className={`introduce`}
+        >
           <h4 className="des">
             우드원은 1996년 설립되어 현재에 이르기까지 원목마루만을
             수입,유통,판매하고 있습니다.
@@ -63,7 +88,7 @@ const Intro = () => {
             서비스와 A/S요청시 신속한 처리로 고객님의 아름다운 생활공간을
             청조하는데 기여할수 있도록 노력하겠습니다.
           </h4>
-        </div>
+        </motion.div>
       </div>
     </IntroBox>
   );

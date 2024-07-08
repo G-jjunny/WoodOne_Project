@@ -6,11 +6,15 @@
   --dark-green: #69887b;
   --bright: #fff8f0;
   --gray: #dfe0df;
+  --animate-delay-1: 0.5s;
+  --animate-delay-2: 1s;
+  --animate-delay-3: 1.5s;
 }
 body {
   font-family: "Noto Sans KR", "Poppins", sans-serif;
   font-optical-sizing: auto;
   color: var(--dark);
+  // background-color: var(--bright);
   .en {
     font-family: "Poppins", sans-serif;
   }

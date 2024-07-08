@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 import GallaryMockUp from "../../assets/gallary-mockup.jpg";
+import { motion } from "framer-motion";
 
 const IntroGallaryArea = styled.div`
   padding: 200px 0;
@@ -48,7 +49,15 @@ const IntroGallary = () => {
   return (
     <IntroGallaryArea>
       <div className="container">
-        <div className="gallary-line">
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { delay: 0.1, duration: 1 },
+          }}
+          className="gallary-line"
+        >
           <h1 className="headline">COLLECTION</h1>
           <h4>
             {/* <span className="company-name">Sample</span> 텍스트 추가 */}
@@ -62,10 +71,18 @@ const IntroGallary = () => {
           <Link to={"/collection"}>
             <Button text="Collection" type="primary" />
           </Link>
-        </div>
-        <div className="gallary-img">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.1 },
+          }}
+          className="gallary-img"
+        >
           {/* <div className="sample-img">Sample Image</div> */}
-        </div>
+        </motion.div>
       </div>
     </IntroGallaryArea>
   );

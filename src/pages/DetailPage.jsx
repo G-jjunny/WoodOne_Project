@@ -75,14 +75,14 @@ const DetailPage = () => {
       ) : (
         <div className="item-list">
           {selectedSize && (
-            <div className="items" key={selectedSize}>
+            <div className="items">
               <div className="line">
                 <h1 className="en">Line. {selectedSize}</h1>
               </div>
               <div className="controller">
-                {data.size.map((size) => (
+                {data.size.map((size, index) => (
                   <button
-                    key={size}
+                    key={index}
                     className={` nav-button ${
                       selectedSize === size ? "active" : ""
                     }`}
@@ -115,19 +115,19 @@ const DetailPage = () => {
                             }}
                           />
                         </div>
-                        {/* <div className="sample-name">
+                        <div className="sample-name">
                           <h3 className="en">{sample.name}</h3>
-                        </div> */}
+                        </div>
                         <div className="sample-des en">
                           <span className="des-head">Color :</span>
                           <span className="semibold">{sample.color}</span>
                         </div>
-                        {sample.des && (
+                        {/* {sample.des && (
                           <div className="sample-des en">
                             <span className="des-head">Size :</span>
                             {sample.des}
                           </div>
-                        )}
+                        )} */}
                       </div>
                     </>
                   );
