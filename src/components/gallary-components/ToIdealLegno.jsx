@@ -3,6 +3,7 @@ import Button from "../Button";
 import { Link } from "react-router-dom";
 import Ideal from "../../assets/Ideal-Legno-Logo.png";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 // import Ideal from "../../assets/Ideal-Legno-Logo.png";
 
 const IdealComponents = styled.div`
@@ -48,15 +49,31 @@ const ToIdealLegno = () => {
 
   return (
     <IdealComponents>
-      <div className="ideal">
+      <motion.div
+        className="ideal"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { delay: 0.1, duration: 1 },
+        }}
+      >
         <img src={Ideal} alt="Ideal" />
-      </div>
-      <div className="line">
+      </motion.div>
+      <motion.div
+        className="line"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { delay: 0.1, duration: 1 },
+        }}
+      >
         <h2 className="en semibold">Ideal Legno</h2>
         <Link to={`${idealUrl}`} target="_blank">
           <Button text="자세히 보기" type="primary" />
         </Link>
-      </div>
+      </motion.div>
     </IdealComponents>
   );
 };

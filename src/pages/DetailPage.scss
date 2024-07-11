@@ -3,7 +3,7 @@
   min-height: 100vh;
   background-color: var(--dark);
   position: relative;
-  padding: 100px 20px;
+  padding-bottom: 100px;
   .close {
     width: 100px;
     height: 100px;
@@ -25,6 +25,7 @@
 
   .item-list {
     width: 100%;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -32,7 +33,6 @@
       color: var(--bright);
       font-weight: 600;
       margin-bottom: 20px;
-      // text-align: center;
       padding: 20px 0;
       border-bottom: 2px solid var(--bright);
     }
@@ -42,8 +42,9 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-
-      margin-bottom: 20px;
+      padding-bottom: 20px;
+      margin: 40px 0;
+      border-bottom: 3px solid var(--bright);
     }
     .nav-button {
       background-color: transparent;

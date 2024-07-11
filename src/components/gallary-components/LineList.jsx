@@ -52,13 +52,21 @@ const LineList = ({ item }) => {
         whileInView={{
           opacity: 1,
           x: 0,
-          transition: { delay: 0.1, duration: 1.3 },
+          transition: { delay: 0.3, duration: 1 },
         }}
         className="box"
       >
         {/* <img src={GreenForest} alt="GreenForest" /> */}
       </motion.div>
-      <div className="line">
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { delay: 0.5, duration: 1 },
+        }}
+        className="line"
+      >
         {/* <h4 className="pri">collection</h4> */}
         <h2 className="en semibold">{line}</h2>
         <h4 className="pri">
@@ -68,7 +76,7 @@ const LineList = ({ item }) => {
         <Link to={`/collection/${line}`}>
           <Button text="자세히 보기" type="primary" />
         </Link>
-      </div>
+      </motion.div>
     </CollectionItems>
   );
 };
