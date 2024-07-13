@@ -12,8 +12,7 @@ import Sample240 from "../json/sample(240).json";
 import { IoIosArrowBack, IoMdClose } from "react-icons/io";
 import Modal from "react-modal";
 import DetailHeader from "../components/DetailHeader";
-import styled from "styled-components";
-import BG125 from "../assets/125BG.jpg";
+import { motion } from "framer-motion";
 
 // 샘플 데이터를 객체로 모아둡니다.
 const sampleData = {
@@ -25,22 +24,6 @@ const sampleData = {
   190: Sample190,
   240: Sample240,
 };
-const BgArea = styled.div`
-  background-image: url(${BG125});
-  width: 100%;
-  height: 400px;
-  padding: 20px;
-  background-size: cover;
-  background-position: center;
-  background-position-y: -200px;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  color: var(--bright);
-  .headline {
-  }
-`;
 
 const DetailPage = () => {
   const navigate = useNavigate();
@@ -95,9 +78,13 @@ const DetailPage = () => {
           </Modal>
         ) : (
           <>
-            <BgArea selectedSize={selectedSize}>
-              <h1 className="headline">Line. {selectedSize}</h1>
-            </BgArea>
+            {/* <BgArea selectedSize={selectedSize}>
+              <div className="bg1"></div>
+              <div className="bg2">
+                <h1 className="headline">Line. {selectedSize}</h1>
+              </div>
+            </BgArea> */}
+            <DetailHeader selectedSize={selectedSize} />
             <div className="item-list">
               {selectedSize && (
                 <div className="items">
@@ -118,10 +105,19 @@ const DetailPage = () => {
                     ))}
                   </div>
                   <div className="sample-list">
-                    {sampleData[selectedSize].map((sample) => {
+                    {sampleData[selectedSize].map((sample, index) => {
                       return (
                         <>
-                          <div className="sample" key={sample.index}>
+                          <motion.div
+                            initial={{ opacity: 0, y: 60 }}
+                            whileInView={{
+                              opacity: 1,
+                              y: 0,
+                              transition: { duration: 0.5 },
+                            }}
+                            className="sample"
+                            key={sample.index}
+                          >
                             <div className="img-area">
                               <img
                                 src={require(`../assets/Sample/${selectedSize}mm/${sample.url}`)}
@@ -153,7 +149,7 @@ const DetailPage = () => {
                           {sample.des}
                           </div>
                           )} */}
-                          </div>
+                          </motion.div>
                         </>
                       );
                     })}
