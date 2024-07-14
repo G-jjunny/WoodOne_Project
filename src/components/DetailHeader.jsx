@@ -15,7 +15,9 @@ const BgArea = styled.div`
     flex-direction: column;
     justify-content: end;
     background-image: ${({ bgImage }) => `url(${bgImage})`};
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
   }
   .line {
     font-size: 60px;
