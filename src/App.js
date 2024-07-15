@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import DetailPage from "./pages/DetailPage";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -21,6 +22,13 @@ function ScrollToTop() {
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <meta property="og:site_name" content="우드원" />
+        <meta property="og:title" content="우드원" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./asset/woodone-logo.jpg" />
+        <meta property="og:description" content="우드원 페이지입니다." />
+      </Helmet>
       <ScrollToTop />
       <NavBar />
       <Routes>
