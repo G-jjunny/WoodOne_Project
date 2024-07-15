@@ -17,6 +17,7 @@ const IntroConsultArea = styled.div`
   height: 600px;
   display: flex;
   align-items: center;
+  overflow: hidden;
   .consult-line {
     display: flex;
     flex-direction: column;
@@ -31,6 +32,7 @@ const IntroConsultArea = styled.div`
   }
   @media screen and (max-width: 800px) {
     background-size: cover;
+    background-position: center;
     background-position: -100px;
   }
 `;

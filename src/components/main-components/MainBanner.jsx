@@ -7,10 +7,12 @@ import SliderBanner from "./SliderBanner";
 
 const MainBannerArea = styled.div`
   width: 100vw;
+  height: 100vh;
   margin-bottom: 150px;
   background-color: var(--main);
   text-align: center;
   align-content: center;
+  overflow: hidden;
   @media screen and (max-width: 500px) {
     background-position: center;
   }

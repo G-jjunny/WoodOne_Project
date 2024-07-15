@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const IntroBox = styled.div`
   padding: 100px 0;
   /* background-color: var(--bright); */
-
+  overflow: hidden;
   .container {
     display: flex;
     flex-direction: column;

@@ -9,10 +9,6 @@ import styled from "styled-components";
 
 const StyledSlider = styled.div`
   /* react-slick css */
-  .slick-prev:before {
-    position: absolute;
-    left: 0;
-  }
   .slick-dots {
     position: absolute;
     bottom: 20px;
@@ -25,10 +21,15 @@ const StyledSlider = styled.div`
 
 const Slide = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
-  .slide-img {
-    width: 100%;
+  background-image: ${(props) => `url(${props.img})`};
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  /* height: 100%; */
+  @media screen and (max-width: 768px) {
+    height: 400px;
   }
 `;
 
@@ -36,7 +37,7 @@ const SliderBanner = () => {
   const settings = {
     dots: true,
     infinite: true,
-    // autoplay: true,
+    autoplay: true,
     fade: true,
     speed: 500,
     slidesToShow: 1,
@@ -47,14 +48,14 @@ const SliderBanner = () => {
   return (
     <StyledSlider>
       <Slider {...settings}>
-        <Slide>
-          <img className="slide-img" src={Banner1} alt="banner1" />
+        <Slide img={Banner1}>
+          {/* <img className="slide-img" src={Banner1} alt="banner1" /> */}
         </Slide>
-        <Slide>
-          <img className="slide-img" src={Banner2} alt="banner2" />
+        <Slide img={Banner2}>
+          {/* <img className="slide-img" src={Banner2} alt="banner2" /> */}
         </Slide>
-        <Slide>
-          <img className="slide-img" src={Banner3} alt="banner3" />
+        <Slide img={Banner3}>
+          {/* <img className="slide-img" src={Banner3} alt="banner3" /> */}
         </Slide>
       </Slider>
     </StyledSlider>

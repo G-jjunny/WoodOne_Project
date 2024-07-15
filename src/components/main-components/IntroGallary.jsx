@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 const IntroGallaryArea = styled.div`
   padding: 200px 0;
+  overflow: hidden;
   .container {
     display: flex;
     justify-content: end;
