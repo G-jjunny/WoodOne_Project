@@ -19,6 +19,7 @@ const BgArea = styled.div`
     background-attachment: fixed;
     background-position: bottom;
   }
+
   .line {
     font-size: 60px;
     margin-left: 100px;
