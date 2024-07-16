@@ -21,7 +21,7 @@ const StyledSlider = styled.div`
 
 const Slide = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 600px;
   position: relative;
   background-image: ${(props) => `url(${props.img})`};
   background-position: center;

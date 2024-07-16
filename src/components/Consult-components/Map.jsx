@@ -19,6 +19,7 @@ const Map = () => {
     marker.setMap(map);
 
     map.setZoomable(false);
+    map.relayout();
   }, []);
 
   return (

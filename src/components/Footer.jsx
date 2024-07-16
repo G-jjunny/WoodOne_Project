@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="flex">
           <h4>CEO : 정병훈</h4> <div className="slash"></div>
-          <h4>Business License : $$$$$$$$$$$$$</h4>
+          <h4>Business License : 215-08-88208</h4>
         </div>
         <h4>Adress : 강남구 논현로128길 22-4 세은빌딩 5층</h4>
         <h4>Tel : 02-547-8164</h4>
