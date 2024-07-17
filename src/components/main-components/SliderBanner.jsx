@@ -2,10 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Banner1 from "../../assets/Banner/banner1.jpg";
-import Banner2 from "../../assets/Banner/banner2.jpg";
-import Banner3 from "../../assets/Banner/banner3.jpg";
+import Image1 from "../../assets/bgMain.jpg";
+import Image2 from "../../assets/banner2.jpg";
+import Image3 from "../../assets/banner3.jpg";
 import styled from "styled-components";
+import SlideItem from "../SlideItem";
 
 const StyledSlider = styled.div`
   /* react-slick css */
@@ -19,21 +20,17 @@ const StyledSlider = styled.div`
   }
 `;
 
-const Slide = styled.div`
-  width: 100%;
-  height: 600px;
-  position: relative;
-  background-image: ${(props) => `url(${props.img})`};
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  /* height: 100%; */
-  @media screen and (max-width: 768px) {
-    height: 400px;
-  }
-`;
+const slideDes = {
+  title: "WoodOne",
+  description: [
+    "A company specializing in wood flooring that pursues nature-frendly interior space",
+    "Experience a special collection",
+    "Create a beautiful wood floor interior service",
+  ],
+  img: [Image1, Image2, Image3],
+};
 
-const SliderBanner = () => {
+export default function SliderBanner() {
   const settings = {
     dots: true,
     infinite: true,
@@ -45,21 +42,19 @@ const SliderBanner = () => {
     autoplaySpeed: 3000,
   };
 
+  console.log(slideDes);
   return (
     <StyledSlider>
       <Slider {...settings}>
-        <Slide img={Banner1}>
-          {/* <img className="slide-img" src={Banner1} alt="banner1" /> */}
-        </Slide>
-        <Slide img={Banner2}>
-          {/* <img className="slide-img" src={Banner2} alt="banner2" /> */}
-        </Slide>
-        <Slide img={Banner3}>
-          {/* <img className="slide-img" src={Banner3} alt="banner3" /> */}
-        </Slide>
+        {slideDes.description.map((item, index) => (
+          <SlideItem
+            title={slideDes.title}
+            description={item}
+            key={index}
+            image={slideDes.img[index]}
+          />
+        ))}
       </Slider>
     </StyledSlider>
   );
-};
-
-export default SliderBanner;
+}
