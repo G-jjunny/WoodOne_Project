@@ -22,7 +22,7 @@ const DesText = styled.div`
     max-width: 350px;
   }
   .dis {
-    font-weight: 700;
+    font-weight: 900;
     margin-top: 10px;
   }
   .down {
@@ -30,6 +30,13 @@ const DesText = styled.div`
   }
   border-left: 10px solid var(--bright);
   border-right: 10px solid var(--bright);
+
+  @media screen and (max-width: 500px) {
+    .dis-area {
+      width: 250px;
+      padding: 10px 20px;
+    }
+  }
 `;
 
 const SlideItem = ({ title, description, image }) => {

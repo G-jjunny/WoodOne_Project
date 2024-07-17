@@ -69,7 +69,9 @@ const DetailPage = () => {
                 alt={itemState.index}
               />
               <div className="des-area">
-                <h1 className="headline">{itemState.name}</h1>
+                <h1 className="dis" style={{ fontWeight: "900" }}>
+                  {itemState.name}
+                </h1>
                 <h3>COLOR : {itemState.color}</h3>
                 <h3>SIZE : {itemState.des}</h3>
                 {itemState.type && <h3>TYPE : {itemState.type}</h3>}

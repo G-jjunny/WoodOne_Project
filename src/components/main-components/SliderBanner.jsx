@@ -42,7 +42,6 @@ export default function SliderBanner() {
     autoplaySpeed: 3000,
   };
 
-  console.log(slideDes);
   return (
     <StyledSlider>
       <Slider {...settings}>

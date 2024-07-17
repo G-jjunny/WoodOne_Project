@@ -23,7 +23,6 @@ const MainBanner = () => {
   return (
     <MainBannerArea>
       <SliderBanner />
-      {/* <SlideItem /> */}
     </MainBannerArea>
   );
 };
