@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Logo from "../../assets/logo.png";
 import { motion } from "framer-motion";
@@ -23,6 +23,7 @@ const IntroBox = styled.div`
       margin: 0 auto;
       display: flex;
       flex-direction: column;
+      gap: 10px;
       padding-bottom: 25px;
       border-bottom: 3px solid var(--dark);
     }

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 const Slide = styled.div`
   width: 100%;
@@ -15,11 +17,17 @@ const Slide = styled.div`
 `;
 const DesText = styled.div`
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   .dis-area {
     padding: 30px 35px;
     box-sizing: border-box;
     color: var(--bright);
     max-width: 350px;
+    border-left: 10px solid var(--bright);
+    border-right: 10px solid var(--bright);
   }
   .dis {
     font-weight: 900;
@@ -28,8 +36,6 @@ const DesText = styled.div`
   .down {
     opacity: 0.8;
   }
-  border-left: 10px solid var(--bright);
-  border-right: 10px solid var(--bright);
 
   @media screen and (max-width: 500px) {
     .dis-area {
@@ -39,7 +45,7 @@ const DesText = styled.div`
   }
 `;
 
-const SlideItem = ({ title, description, image }) => {
+const SlideItem = ({ title, description, image, btn }) => {
   return (
     <Slide image={image}>
       <DesText>
@@ -55,6 +61,11 @@ const SlideItem = ({ title, description, image }) => {
           <h1 className="dis">{title}</h1>
           <h3 className="dis down">{description}</h3>
         </motion.div>
+        {btn && (
+          <Link to={`/${btn}`}>
+            <Button text="more" type="more" />
+          </Link>
+        )}
       </DesText>
     </Slide>
   );

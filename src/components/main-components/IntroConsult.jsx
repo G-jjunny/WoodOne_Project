@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import consult from "../../assets/consult.png";
+import consult from "../../assets/consult.jpg";
 import sss from "../../assets/sss.jpg";
 import Button from "../Button";
 import { Link } from "react-router-dom";
@@ -13,6 +13,7 @@ const IntroConsultArea = styled.div`
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100vw;
   height: 600px;
   display: flex;

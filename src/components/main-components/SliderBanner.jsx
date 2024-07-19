@@ -18,6 +18,11 @@ const StyledSlider = styled.div`
     font-size: 10px;
     color: var(--bright);
   }
+  @media screen and (max-width: 500px) {
+    .hidden {
+      display: none;
+    }
+  }
 `;
 
 const slideDes = {
@@ -28,18 +33,50 @@ const slideDes = {
     "Create a beautiful wood floor interior service",
   ],
   img: [Image1, Image2, Image3],
+  btn: ["", "collection", "consult"],
 };
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className + " hidden"}
+      style={{ ...style, display: "block", right: "20px", opacity: 0.8 }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className + " hidden"}
+      style={{
+        ...style,
+        display: "block",
+        left: "20px",
+        zIndex: "10",
+        opacity: 0.8,
+      }}
+      onClick={onClick}
+    />
+  );
+}
 
 export default function SliderBanner() {
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
+    lazyLoad: true,
     fade: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
@@ -51,6 +88,7 @@ export default function SliderBanner() {
             description={item}
             key={index}
             image={slideDes.img[index]}
+            btn={slideDes.btn[index]}
           />
         ))}
       </Slider>
