@@ -145,12 +145,6 @@ const DetailPage = () => {
                               <span className="des-head">Color :</span>
                               <span className="semibold">{sample.color}</span>
                             </div>
-                            {/* {sample.des && (
-                          <div className="sample-des en">
-                          <span className="des-head">Size :</span>
-                          {sample.des}
-                          </div>
-                          )} */}
                           </motion.div>
                         </>
                       );

@@ -70,5 +70,37 @@
     "url": "WashOak.png",
     "des": "10x70x600",
     "type": "헤링본가능"
+  },
+  {
+    "index": "9",
+    "line": 70,
+    "name": "Oak",
+    "color": "Wn LT Gray",
+    "url": "Wn LT gray 14x60x1200(random).jpg",
+    "des": "14x60x1200"
+  },
+  {
+    "index": "10",
+    "line": 70,
+    "name": "Oak",
+    "color": "Wn LT Oak Nat",
+    "url": "Wn LT Oak Nat.jpg",
+    "des": "14x60x1200"
+  },
+  {
+    "index": "11",
+    "line": 70,
+    "name": "Oak",
+    "color": "Wn LT Smoke",
+    "url": "Wn LT Smoke.jpg",
+    "des": "14x60x1200"
+  },
+  {
+    "index": "12",
+    "line": 70,
+    "name": "Oak",
+    "color": "Wn LT White",
+    "url": "Wn LT White.jpg",
+    "des": "14x60x1200"
   }
 ]
