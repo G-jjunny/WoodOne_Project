@@ -97,7 +97,7 @@ const DetailPage = () => {
                     {data.size.map((size, index) => (
                       <button
                         key={index}
-                        className={` nav-button ${
+                        className={`dis nav-button ${
                           selectedSize === size ? "active" : ""
                         }`}
                         onClick={() => setSelectedSize(size)}
@@ -142,8 +142,8 @@ const DetailPage = () => {
                               <h3 className="en">{sample.name}</h3>
                             </div>
                             <div className="sample-des en">
-                              <span className="des-head">Color :</span>
-                              <span className="semibold">{sample.color}</span>
+                              <span className="des-head"></span>
+                              <span className="des-head">{sample.color}</span>
                             </div>
                           </motion.div>
                         </>

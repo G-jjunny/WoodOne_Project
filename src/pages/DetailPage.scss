@@ -1,7 +1,8 @@
 .detail {
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--dark);
+  // background-color: var(--dark);
+  background-color: var(--bright);
   position: relative;
   padding-bottom: 100px;
   .close {
@@ -40,18 +41,19 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 40px;
       justify-content: center;
       padding-bottom: 20px;
       margin: 40px 0;
-      border-bottom: 3px solid var(--bright);
+      border-bottom: 3px solid var(--dark);
     }
     .nav-button {
       background-color: transparent;
       border: none;
       cursor: pointer;
       font-size: 18px;
-      color: var(--bright);
+      color: var(--dark);
+      font-weight: 900;
       &.active {
         color: var(--green);
         border-bottom: 2px solid var(--green);
@@ -68,18 +70,20 @@
       // width: 100px;
       // height: 100px;
       // background-color: var(--main);
-      color: var(--bright);
+      color: var(--dark);
       margin-bottom: 20px;
       overflow: hidden;
-      width: calc((100vw - 120px) / 5);
+      width: calc((100vw - 160px) / 7);
     }
     .img-area {
       overflow: hidden;
-      height: 400px;
+      aspect-ratio: 1/2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     img {
-      width: 100%;
-      height: 100%;
+      height: 150%;
       cursor: pointer;
       object-fit: cover;
       transition: 0.8s;
@@ -97,8 +101,9 @@
       margin-top: 10px;
       font-size: 14px;
       align-items: baseline;
-      span {
-        padding-left: 3px;
+      .des-head {
+        // padding-left: 3px;
+        font-weight: 700;
       }
       &:hover {
         text-decoration: underline;
@@ -109,14 +114,14 @@
   @media screen and (max-width: 1100px) {
     .item-list {
       .sample {
-        width: calc((100vw - 100px) / 4);
+        width: calc((100vw - 120px) / 5);
       }
     }
   }
   @media screen and (max-width: 890px) {
     .item-list {
       .sample {
-        width: calc((100vw - 80px) / 3);
+        width: calc((100vw - 100px) / 4);
       }
       // .img-area {
       //   height: ;
@@ -125,11 +130,14 @@
   }
   @media screen and (max-width: 500px) {
     .item-list {
+      .controller {
+        gap: 20px;
+      }
       .sample {
-        width: calc((100vw - 60px) / 2);
+        width: calc((100vw - 80px) / 3);
       }
       .img-area {
-        height: 210px;
+        // height: 210px;
       }
     }
   }
