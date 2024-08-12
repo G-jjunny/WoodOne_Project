@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.scss";
 import GallaryPage from "./pages/GallaryPage";
 import PageMain from "./pages/PageMain";
@@ -13,7 +13,11 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
+    if (pathname === "/collection/Green%20Forest") {
+      return;
+    }
     window.scrollTo(0, 0);
+    // console.log(pathname);
   }, [pathname]);
 
   return null;

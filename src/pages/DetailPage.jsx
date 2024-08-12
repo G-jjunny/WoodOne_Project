@@ -58,6 +58,7 @@ const DetailPage = () => {
                   fontSize: "40px",
                   position: "fixed",
                   cursor: "pointer",
+                  color: "#fff",
                 }}
                 onClick={() => {
                   setIsModalOpen(false);
