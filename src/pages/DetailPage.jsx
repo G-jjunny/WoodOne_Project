@@ -29,6 +29,7 @@ const DetailPage = () => {
   const navigate = useNavigate();
   const [selectedSize, setSelectedSize] = useState(70);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
   const [itemState, setItemState] = useState({
     index: "",
     line: "",
@@ -40,35 +41,83 @@ const DetailPage = () => {
   });
   const data = collectionData[0];
 
-  const handleToggleModal = () => {
-    // 모달을 열때 현재 스크롤 위치를 저장하고,
-    // 이후 스크롤을 그 위치로 설정하여 최상단으로 스크롤되는 것을 방지
-    let scrollPosition = window.scrollY;
-    console.log(scrollPosition);
-    if (isModalOpen === false) {
-      // scrollPosition = window.scrollY;
-      setIsModalOpen(true);
-      console.log(isModalOpen);
-    } else {
-      setIsModalOpen(false);
-      window.scrollTo(0, scrollPosition); // 기존 스크롤 위치로 이동
-    }
+  const openModal = (sample) => {
+    setScrollPosition(window.scrollY); // 현재 스크롤 위치 저장
+    setIsModalOpen(true);
+    setItemState({
+      index: sample.index,
+      line: selectedSize,
+      name: sample.name,
+      color: sample.color,
+      url: sample.url,
+      des: sample.des,
+      type: sample.type,
+    });
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    window.scrollTo(0, scrollPosition); // 기존 스크롤 위치로 복귀
   };
 
   return (
     <>
       <div className="detail">
-        {/* <DetailHeader /> */}
         <div className="close" onClick={() => navigate("/collection")}>
           <IoIosArrowBack />
         </div>
-        {isModalOpen ? (
-          <Modal
-            isOpen={isModalOpen}
-            onRequestClose={() => {
-              handleToggleModal();
-            }}
-          >
+        <DetailHeader selectedSize={selectedSize} />
+        <div className="item-list">
+          {selectedSize && (
+            <div className="items">
+              <div className="controller">
+                {data.size.map((size, index) => (
+                  <button
+                    key={index}
+                    className={`dis nav-button ${
+                      selectedSize === size ? "active" : ""
+                    }`}
+                    onClick={() => setSelectedSize(size)}
+                  >
+                    {size}mm
+                  </button>
+                ))}
+              </div>
+
+              <div className="sample-list">
+                {sampleData[selectedSize].map((sample, index) => (
+                  <motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5 },
+                    }}
+                    className="sample"
+                    key={sample.index}
+                  >
+                    <div className="img-area">
+                      <img
+                        src={require(`../assets/Sample/${selectedSize}mm/${sample.url}`)}
+                        alt={sample.name}
+                        onClick={() => openModal(sample)}
+                      />
+                    </div>
+                    <div className="sample-name">
+                      <h3 className="en">{sample.name}</h3>
+                    </div>
+                    <div className="sample-des en">
+                      <span className="des-head"></span>
+                      <span className="des-head">{sample.color}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+        {isModalOpen && (
+          <Modal isOpen={isModalOpen} onRequestClose={closeModal}>
             <div className="modal-area">
               <IoMdClose
                 style={{
@@ -77,12 +126,7 @@ const DetailPage = () => {
                   cursor: "pointer",
                   color: "#fff",
                 }}
-                onClick={() => {
-                  // const scrollPosition = window.scrollY;
-                  // setIsModalOpen(false);
-                  // window.scrollTo(0, scrollPosition); // 기존 스크롤 위치로 이동
-                  handleToggleModal();
-                }}
+                onClick={closeModal}
               />
               <img
                 className="modal-img"
@@ -99,76 +143,6 @@ const DetailPage = () => {
               </div>
             </div>
           </Modal>
-        ) : (
-          <>
-            <DetailHeader selectedSize={selectedSize} />
-            <div className="item-list">
-              {selectedSize && (
-                <div className="items">
-                  {/* <div className="line" style={{}}>
-                    <h1 className="en">Line. {selectedSize}</h1>
-                  </div> */}
-                  <div className="controller">
-                    {data.size.map((size, index) => (
-                      <button
-                        key={index}
-                        className={`dis nav-button ${
-                          selectedSize === size ? "active" : ""
-                        }`}
-                        onClick={() => setSelectedSize(size)}
-                      >
-                        {size}mm
-                      </button>
-                    ))}
-                  </div>
-                  <div className="sample-list">
-                    {sampleData[selectedSize].map((sample, index) => {
-                      return (
-                        <>
-                          <motion.div
-                            initial={{ opacity: 0, y: 60 }}
-                            whileInView={{
-                              opacity: 1,
-                              y: 0,
-                              transition: { duration: 0.5 },
-                            }}
-                            className="sample"
-                            key={sample.index}
-                          >
-                            <div className="img-area">
-                              <img
-                                src={require(`../assets/Sample/${selectedSize}mm/${sample.url}`)}
-                                alt={sample.name}
-                                onClick={() => {
-                                  handleToggleModal();
-                                  setItemState({
-                                    index: sample.index,
-                                    line: selectedSize,
-                                    name: sample.name,
-                                    color: sample.color,
-                                    url: sample.url,
-                                    des: sample.des,
-                                    type: sample.type,
-                                  });
-                                }}
-                              />
-                            </div>
-                            <div className="sample-name">
-                              <h3 className="en">{sample.name}</h3>
-                            </div>
-                            <div className="sample-des en">
-                              <span className="des-head"></span>
-                              <span className="des-head">{sample.color}</span>
-                            </div>
-                          </motion.div>
-                        </>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-            </div>
-          </>
         )}
       </div>
     </>
