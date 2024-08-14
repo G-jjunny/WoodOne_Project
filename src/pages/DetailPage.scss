@@ -77,8 +77,10 @@
     }
     .img-area {
       overflow: hidden;
-      aspect-ratio: 3/4;
+      // aspect-ratio: 3/4;
+      aspect-ratio: 2/1;
       display: flex;
+      // transform: rotate(90deg);
       justify-content: center;
       align-items: center;
     }
@@ -115,14 +117,14 @@
   @media screen and (max-width: 1100px) {
     .item-list {
       .sample {
-        width: calc((100vw - 120px) / 5);
+        width: calc((100vw - 200px) / 5);
       }
     }
   }
   @media screen and (max-width: 890px) {
     .item-list {
       .sample {
-        width: calc((100vw - 100px) / 4);
+        width: calc((100vw - 120px) / 3);
       }
       // .img-area {
       //   height: ;
@@ -135,11 +137,11 @@
         gap: 20px;
       }
       .sample {
-        width: calc((100vw - 80px) / 3);
+        width: calc((100vw - 80px) / 2);
       }
-      .img-area {
-        // height: 210px;
-      }
+      // .img-area {
+      //   // height: 210px;
+      // }
     }
   }
 }
@@ -151,7 +153,8 @@
   position: relative;
 }
 .modal-img {
-  width: 60%;
+  box-sizing: border-box;
+  width: 50%;
 }
 .des-area {
   display: flex;
