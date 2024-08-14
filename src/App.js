@@ -45,7 +45,7 @@ function App() {
         <meta property="og:image" content="./asset/woodone-logo.jpg" />
         <meta property="og:description" content="우드원 페이지입니다." />
       </Helmet>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <NavBar />
       <Routes>
         <Route path="/" element={<PageMain />}></Route>

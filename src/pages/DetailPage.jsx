@@ -40,6 +40,21 @@ const DetailPage = () => {
   });
   const data = collectionData[0];
 
+  const handleToggleModal = () => {
+    // 모달을 열때 현재 스크롤 위치를 저장하고,
+    // 이후 스크롤을 그 위치로 설정하여 최상단으로 스크롤되는 것을 방지
+    let scrollPosition = window.scrollY;
+    console.log(scrollPosition);
+    if (isModalOpen === false) {
+      // scrollPosition = window.scrollY;
+      setIsModalOpen(true);
+      console.log(isModalOpen);
+    } else {
+      setIsModalOpen(false);
+      window.scrollTo(0, scrollPosition); // 기존 스크롤 위치로 이동
+    }
+  };
+
   return (
     <>
       <div className="detail">
@@ -50,7 +65,9 @@ const DetailPage = () => {
         {isModalOpen ? (
           <Modal
             isOpen={isModalOpen}
-            onRequestClose={() => setIsModalOpen(false)}
+            onRequestClose={() => {
+              handleToggleModal();
+            }}
           >
             <div className="modal-area">
               <IoMdClose
@@ -61,7 +78,10 @@ const DetailPage = () => {
                   color: "#fff",
                 }}
                 onClick={() => {
-                  setIsModalOpen(false);
+                  // const scrollPosition = window.scrollY;
+                  // setIsModalOpen(false);
+                  // window.scrollTo(0, scrollPosition); // 기존 스크롤 위치로 이동
+                  handleToggleModal();
                 }}
               />
               <img
@@ -81,12 +101,6 @@ const DetailPage = () => {
           </Modal>
         ) : (
           <>
-            {/* <BgArea selectedSize={selectedSize}>
-              <div className="bg1"></div>
-              <div className="bg2">
-                <h1 className="headline">Line. {selectedSize}</h1>
-              </div>
-            </BgArea> */}
             <DetailHeader selectedSize={selectedSize} />
             <div className="item-list">
               {selectedSize && (
@@ -126,7 +140,7 @@ const DetailPage = () => {
                                 src={require(`../assets/Sample/${selectedSize}mm/${sample.url}`)}
                                 alt={sample.name}
                                 onClick={() => {
-                                  setIsModalOpen(true);
+                                  handleToggleModal();
                                   setItemState({
                                     index: sample.index,
                                     line: selectedSize,
