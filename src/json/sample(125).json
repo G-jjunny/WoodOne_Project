@@ -116,7 +116,7 @@
     "index": "15",
     "line": 125,
     "name": "Oak",
-    "color": "WC Mocha",
+    "color": "Mocha",
     "url": "WC Mocha 10x125x900.jpg",
     "des": "10x125x900"
   },
@@ -124,7 +124,7 @@
     "index": "16",
     "line": 125,
     "name": "Oak",
-    "color": "WC Vintage Gray",
+    "color": "Vintage Gray",
     "url": "WC Vintage Gray 14x125x1200(랜덤).jpg",
     "des": "14x125x1200"
   },
@@ -132,7 +132,7 @@
     "index": "17",
     "line": 125,
     "name": "Oak",
-    "color": "WC Vintage Oak",
+    "color": "Vintage Oak",
     "url": "WC Vintage Oak 14x125x1200(랜덤).jpg",
     "des": "14x125x1200"
   },
@@ -156,7 +156,7 @@
     "index": "20",
     "line": 125,
     "name": "Oak",
-    "color": "WN VC Dark Antique",
+    "color": "WN Dark Antique",
     "url": "WN VC Dark Antique 10x125x900.jpg",
     "des": "10x125x900"
   },
@@ -164,7 +164,7 @@
     "index": "21",
     "line": 125,
     "name": "Oak",
-    "color": "WN VC Rock Gray",
+    "color": "WN Rock Gray",
     "url": "WN VC Rock Gray 10x125x900.jpg",
     "des": "10x125x900"
   },
@@ -172,7 +172,7 @@
     "index": "22",
     "line": 125,
     "name": "Walnut",
-    "color": "WN Walnut Brush",
+    "color": "Walnut",
     "url": "WN Walnut Brush 12(1.2)x190x1900.jpg",
     "des": "12x190x1900"
   },
@@ -180,7 +180,7 @@
     "index": "23",
     "line": 125,
     "name": "Oak",
-    "color": "WV NC Antique Oak",
+    "color": "WN Antique Oak",
     "url": "WV NC Antique Oak 10x125x900.jpg",
     "des": "10x125x900"
   }

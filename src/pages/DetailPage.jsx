@@ -94,7 +94,7 @@ const DetailPage = () => {
                       transition: { duration: 0.5 },
                     }}
                     className="sample"
-                    key={sample.index}
+                    key={index}
                   >
                     <div className="img-area">
                       <img
@@ -117,7 +117,11 @@ const DetailPage = () => {
           )}
         </div>
         {isModalOpen && (
-          <Modal isOpen={isModalOpen} onRequestClose={closeModal}>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            ariaHideApp={false}
+          >
             <div className="modal-area">
               <IoMdClose
                 style={{
