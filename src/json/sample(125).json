@@ -17,31 +17,12 @@
     "des": "10x125x900"
   },
   {
-    "index": "4",
+    "index": "14",
     "line": 125,
     "name": "Oak",
-    "color": "WC Brown",
-    "url": "Brown 10x125x810.jpg",
+    "color": "WC White Oak",
+    "url": "White Oak 10x125x810.jpg",
     "des": "10x125x810",
-    "type": "헤링본시공 가능"
-  },
-
-  {
-    "index": "5",
-    "line": 125,
-    "name": "Oak",
-    "color": "WC Dark Beige",
-    "url": "Dark Beige 10x125x810.jpg",
-    "des": "10x125x810",
-    "type": "헤링본시공 가능"
-  },
-  {
-    "index": "6",
-    "line": 125,
-    "name": "Oak",
-    "color": "WC Dark Brown",
-    "url": "Dark Brown 10x125x900.jpg",
-    "des": "10x125x900",
     "type": "헤링본시공 가능"
   },
   {
@@ -53,6 +34,35 @@
     "des": "10x125x810",
     "type": "헤링본시공 가능"
   },
+  {
+    "index": "5",
+    "line": 125,
+    "name": "Oak",
+    "color": "WC Dark Beige",
+    "url": "Dark Beige 10x125x810.jpg",
+    "des": "10x125x810",
+    "type": "헤링본시공 가능"
+  },
+  {
+    "index": "4",
+    "line": 125,
+    "name": "Oak",
+    "color": "WC Brown",
+    "url": "Brown 10x125x810.jpg",
+    "des": "10x125x810",
+    "type": "헤링본시공 가능"
+  },
+
+  {
+    "index": "6",
+    "line": 125,
+    "name": "Oak",
+    "color": "WC Dark Brown",
+    "url": "Dark Brown 10x125x900.jpg",
+    "des": "10x125x900",
+    "type": "헤링본시공 가능"
+  },
+
   {
     "index": "8",
     "line": 125,
@@ -103,15 +113,7 @@
     "url": "Wash Oak 10x125x900.jpg",
     "des": "10x125x900"
   },
-  {
-    "index": "14",
-    "line": 125,
-    "name": "Oak",
-    "color": "WC White Oak",
-    "url": "White Oak 10x125x810.jpg",
-    "des": "10x125x810",
-    "type": "헤링본시공 가능"
-  },
+
   {
     "index": "15",
     "line": 125,
@@ -120,22 +122,7 @@
     "url": "WC Mocha 10x125x900.jpg",
     "des": "10x125x900"
   },
-  {
-    "index": "16",
-    "line": 125,
-    "name": "Oak",
-    "color": "Vintage Gray",
-    "url": "WC Vintage Gray 14x125x1200(랜덤).jpg",
-    "des": "14x125x1200"
-  },
-  {
-    "index": "17",
-    "line": 125,
-    "name": "Oak",
-    "color": "Vintage Oak",
-    "url": "WC Vintage Oak 14x125x1200(랜덤).jpg",
-    "des": "14x125x1200"
-  },
+
   {
     "index": "18",
     "line": 125,
@@ -160,14 +147,7 @@
     "url": "WN VC Dark Antique 10x125x900.jpg",
     "des": "10x125x900"
   },
-  {
-    "index": "21",
-    "line": 125,
-    "name": "Oak",
-    "color": "WN Rock Gray",
-    "url": "WN VC Rock Gray 10x125x900.jpg",
-    "des": "10x125x900"
-  },
+
   {
     "index": "22",
     "line": 125,
@@ -183,5 +163,29 @@
     "color": "WN Antique Oak",
     "url": "WV NC Antique Oak 10x125x900.jpg",
     "des": "10x125x900"
+  },
+  {
+    "index": "21",
+    "line": 125,
+    "name": "Oak",
+    "color": "WN Rock Gray",
+    "url": "WN VC Rock Gray 10x125x900.jpg",
+    "des": "10x125x900"
+  },
+  {
+    "index": "16",
+    "line": 125,
+    "name": "Oak",
+    "color": "Vintage Gray",
+    "url": "WC Vintage Gray 14x125x1200(랜덤).jpg",
+    "des": "14x125x1200"
+  },
+  {
+    "index": "17",
+    "line": 125,
+    "name": "Oak",
+    "color": "Vintage Oak",
+    "url": "WC Vintage Oak 14x125x1200(랜덤).jpg",
+    "des": "14x125x1200"
   }
 ]
