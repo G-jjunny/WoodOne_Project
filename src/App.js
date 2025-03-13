@@ -25,11 +25,15 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Helmet>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
+        <meta
+          name="naver-site-verification"
+          content="3a5a0affbb37ef90ed9630e687070b77c9c5fac1"
+        />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,23 +42,25 @@ function App() {
           rel="stylesheet"
         />
         {/* Open Graph */}
-        <title>우드원</title>
         <meta property="og:site_name" content="우드원" />
         <meta property="og:title" content="우드원" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="./asset/woodone-logo.jpg" />
         <meta property="og:description" content="우드원 페이지입니다." />
+        <title>우드원</title>
       </Helmet>
-      {/* <ScrollToTop /> */}
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<PageMain />}></Route>
-        <Route path="/collection" element={<GallaryPage />}></Route>
-        <Route path="/collection/:id" element={<DetailPage />}></Route>
-        <Route path="/consult" element={<ConsultPage />}></Route>
-      </Routes>
-      <Footer />
-    </div>
+      <div className="App">
+        {/* <ScrollToTop /> */}
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<PageMain />}></Route>
+          <Route path="/collection" element={<GallaryPage />}></Route>
+          <Route path="/collection/:id" element={<DetailPage />}></Route>
+          <Route path="/consult" element={<ConsultPage />}></Route>
+        </Routes>
+        <Footer />
+      </div>
+    </>
   );
 }
 
